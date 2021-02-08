@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "379234331341",
+    "project_id": "righttoroam-618f0",
+    "storage_bucket": "righttoroam-618f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379234331341:android:b66e3b980e2bd52c2d1784",
+        "android_client_info": {
+          "package_name": "me.trof.righttoroam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379234331341-ij3dpu1hf6fg606qibu2gnr8s8psakf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.trof.righttoroam",
+            "certificate_hash": "868c6f696267bb3771c44e3e412afb820322f0fb"
+          }
+        },
+        {
+          "client_id": "379234331341-eao3tvtm3ottin9ahnhqe3ku5vbl24go.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAel82diOpYO0SIhPXGdcRM65eW-ZUfRXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379234331341-eao3tvtm3ottin9ahnhqe3ku5vbl24go.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "379234331341-51adfqlalb6uadh1gqbsipgulol1n79v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "me.trof.righttoroam"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

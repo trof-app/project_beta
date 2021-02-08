@@ -224,6 +224,7 @@ class AuthController extends GetxController {
   //check if user is an admin user
   isAdmin() async {
     await getUser.then((user) async {
+      // print(user?.uid);
       DocumentSnapshot adminRef =
           await _db.collection('admin').doc(user?.uid).get();
       if (adminRef.exists) {
