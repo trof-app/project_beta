@@ -43,5 +43,5 @@ app.*.map.json
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 
 # added by delay
-/ios/Flutter/
-/ios/build/
+# /ios/Flutter/
+# /ios/build/
