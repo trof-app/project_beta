@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_starter/controllers/controllers.dart';
+import 'package:flutter_starter/ui/admin/admin_ui.dart';
 import 'package:flutter_starter/ui/eventmap_ui.dart';
 import 'package:get/get.dart';
 
@@ -18,9 +19,6 @@ class DrawerUI extends StatelessWidget {
           // decoration: BoxDecoration(color: Get.theme.accentColor),
         ),
         ListTile(
-          title: Text('Lineup'),
-        ),
-        ListTile(
           title: Text('Site Map'),
           onTap: () => Get.to(EventMapUI()),
         ),
@@ -31,10 +29,11 @@ class DrawerUI extends StatelessWidget {
         ListTile(
           title: Text('Contact'),
         ),
-        if (authController.admin.value)
-          ListTile(
-            title: Text('Admin'),
-          )
+        // if (authController.admin.value)
+        ListTile(
+          title: Text('Admin'),
+          onTap: () => Get.to(AdminHomeUI()),
+        )
       ]),
     );
   }

@@ -45,3 +45,8 @@ app.*.map.json
 # added by delay
 # /ios/Flutter/
 # /ios/build/
+.fvm/fvm_config.json
+.gitignore
+ios/Flutter/.last_build_id
+.fvm/flutter_sdk
+.gitignore
