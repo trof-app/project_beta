@@ -39,6 +39,7 @@ class UpsertActUI extends StatelessWidget {
                     keyboardType: TextInputType.text,
                     labelText: 'Genre',
                   ),
+                  FormVerticalSpace(),
                   DateTimeFormField(
                     decoration: const InputDecoration(
                       hintStyle: TextStyle(color: Colors.black45),
@@ -47,7 +48,30 @@ class UpsertActUI extends StatelessWidget {
                       suffixIcon: Icon(Icons.event_note),
                       labelText: 'Set Start Time',
                     ),
-                    mode: DateTimeFieldPickerMode.time,
+                    mode: DateTimeFieldPickerMode.dateAndTime,
+                    initialValue: DateTime(2021, 06, 06),
+                    lastDate: DateTime(2021, 06, 07),
+                    firstDate: DateTime(2021, 06, 06),
+                    autovalidateMode: AutovalidateMode.always,
+                    validator: (e) =>
+                        (e?.day ?? 0) == 1 ? 'Please not the first day' : null,
+                    onDateSelected: (DateTime value) {
+                      print(value);
+                    },
+                  ),
+                  FormVerticalSpace(),
+                  DateTimeFormField(
+                    decoration: const InputDecoration(
+                      hintStyle: TextStyle(color: Colors.black45),
+                      errorStyle: TextStyle(color: Colors.redAccent),
+                      border: OutlineInputBorder(),
+                      suffixIcon: Icon(Icons.event_note),
+                      labelText: 'Set End Time',
+                    ),
+                    mode: DateTimeFieldPickerMode.dateAndTime,
+                    initialValue: DateTime(2021, 06, 06),
+                    lastDate: DateTime(2021, 06, 07),
+                    firstDate: DateTime(2021, 06, 06),
                     autovalidateMode: AutovalidateMode.always,
                     validator: (e) =>
                         (e?.day ?? 0) == 1 ? 'Please not the first day' : null,
